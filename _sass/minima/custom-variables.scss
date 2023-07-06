@@ -1,1 +1,23 @@
 // Placeholder to allow overriding predefined variables smoothly.
+$spacing-unit:     10px !default;
+
+
+
+// $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   15px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$small-med-font-size:  $base-font-size * 0.825 !default;
+$meta-font-size:  $base-font-size * 0.78 !default;
+$base-line-height: 1.5 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+$base-font-family: Verdana, Arial, Helvetica, sans-serif;
+// $brand-color: rgba(52, 136, 247, 0.76);
+// $brand-color: rgb(167, 137, 126);
+// $brand-color: rgb(173, 127, 110);
+$brand-color: rgb(16, 131, 131);
+$charcoal-color: rgb(124, 123, 123);

@@ -1,7 +1,7 @@
-title: Your awesome title
+title: Autonomous Agents and Distributed Intelligence Laboratory
 author:
-  name: GitHub User
-  email: your-email@domain.com
+  name: AADI (Kagan Tumer)
+  email: kagan.tumer@oregonstate.edu
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
@@ -18,9 +18,15 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+
+header_pages:
+  - team.md
+  - publications.md
+
 # Theme-specific settings
 
 minima:
+  skin: classic
   # Minima date format.
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
   #

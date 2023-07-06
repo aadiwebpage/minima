@@ -2,60 +2,51 @@
 layout: base
 ---
 
+
 <div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
 
-  {{ content }}
+  <div class="">
+    <div>
+      <img width="100%" style="padding-top: 0%" src="/assets/images/aadi.png">
+    </div>
+    <br />
+    <div class="footer-col-wrapper in-parent align-top">
+      <div class="home-desc">
+        <p class="home-desc">
+          I am a PhD student at the
+          <a class="reference-url" href="https://research.engr.oregonstate.edu/aadi/home">Autonomous Agents and Distributed
+            Intelligence Lab</a>, part of the
+          <a class="reference-url" href="https://engineering.oregonstate.edu/CoRIS">Collaborative Robotics and
+            Intelligent Systems (CoRIS) Institute</a>
+          at Oregon State University, where I work on learning and coordination in multi-robot systems.
+          I am advised by
+          <a class="reference-url" href="https://web.engr.oregonstate.edu/~ktumer/">Dr. Kagan Tumer</a>.
 
-
-  {% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
-
-
-  {%- if posts.size > 0 -%}
-    {%- if page.list_title -%}
-      <h2 class="post-list-heading">{{ page.list_title }}</h2>
-    {%- endif -%}
-    <ul class="post-list">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {%- for post in posts -%}
-      <li>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-
-    {% if site.paginate %}
-      <div class="pager">
-        <ul class="pagination">
-        {%- if paginator.previous_page %}
-          <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-          <li><div class="current-page">{{ paginator.page }}</div></li>
-        {%- if paginator.next_page %}
-          <li><a href="{{ paginator.next_page_path | relative_url }}" class="next-page">{{ paginator.next_page }}</a></li>
-        {%- else %}
-          <li><div class="pager-edge">•</div></li>
-        {%- endif %}
-        </ul>
+        </p>
       </div>
-    {%- endif %}
 
-  {%- endif -%}
+    </div>
+  </div>
+
+  <br />
+  <header class="about-header">
+  </header>
+
+  <p class="work-Title">
+    News
+  </p>
+  <ul class="styleul">
+    <li>
+      <span class="service-name"> Congratulations to Carrie Rebhuhn for successfully defending her PhD Thesis, and Drew Wilson and Brandon Gigious for successfully defending their Masters Theses!</span> </li>
+    <li>
+      <span class="service-name"> Our paper on Evolving Memory-Augmented Neural Architecture for Deep Memory Problems is nominated for best paper at
+        <a class="reference-url" href="https://web.engr.oregonstate.edu/~ktumer/">GECCO 2017</a>.</span> </li>
+    <li>
+      <span class="service-name"> Congratulations to Aida Rahmattalabi for successfully defending her Masters Thesis! </span> </li>
+  </ul>
+
+  <br /><br />
+
+
 
 </div>
