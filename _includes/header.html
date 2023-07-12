@@ -1,6 +1,6 @@
-<header class="site-header">
+<header class="site-header" /*style="background-color: bisque;*/">
 
-  <div class="wrapper">
+  <div class="header-wrapper" /*style="background-color: aqua;*/">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}

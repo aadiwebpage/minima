@@ -1,0 +1,75 @@
+<!--
+<img class="" src="https://randomuser.me/api/portraits/women/79.jpg" alt="user" />
+-->
+
+<!--
+{% assign member = include.member | default: page.members[0] | default: site.author %}
+-->
+
+
+{% if include.id %}
+
+<div class="card" style="background-color: azure;">
+    <div class="card-text">
+        <div class="portada" style="background-color: rebeccapurple;">
+            <a href="">
+                <img src="/assets/images/profile_transparent.png" alt="{{ author.name }}" itemprop="image">
+            </a>
+            <h4 style="padding-top: 10px;">PhD candidate</h6>
+        </div>
+        <div class="title-total">
+            <div class="title">Ant Collector</div>
+            <h2>Morgan Sweeney</h2>
+
+            <div class="desc">Morgan has collected ants since they were six years old and now has many dozen ants but
+                none in their pants.
+                Morgan has collected ants since they were six years old and now has many dozen ants but none in their
+                pants.
+                Morgan has collected ants since they were six years old and now has many dozen ants but none in their
+                pants.
+                Morgan has collected ants since they were six years old and now has many dozen ants but none in their
+                pants.
+                Morgan has collected ants since they were six years old and now has many dozen ants but none in their
+                pants.
+                Morgan has collected ants since they were six years old and now has many dozen ants but none in their
+                pants.
+                Morgan has collected ants since they were six years old and now has many dozen ants but none in their
+                pants.Morgan has collected ants since they were six years old and now has many dozen ants but none in
+                their pants.
+                Morgan has collected ants since they were six years old and now has many dozen ants but none in their
+                pants.
+            </div>
+            <div class="actions">
+                <button><i class="far fa-heart">email</i></button>
+                <button><i class="far fa-envelope">webpage</i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% else %}
+<div class="card-container">
+    <!--<span class="pro">PRO</span>-->
+    <div>
+        <a href="">
+            <img src="/assets/images/profile_transparent.png" alt="{{ author.name }}" itemprop="image" class="">
+        </a>
+    </div>
+
+    <h3>Ricky Park</h3>
+    <h4>PhD candidate</h6>
+        <br />
+        <p>Coordination strategies in asymmetric multiagent systems with multiple objectives. Coordination strategies in
+            asymmetric multiagent systems with multiple objectives</p>
+        <br />
+        <div>
+            <a class="link" href="mailto:dixitg@oregonstate.edu">
+                Email
+            </a>
+            <a class="link" href="https://gdixit.com/">
+                Webpage
+            </a>
+        </div>
+        <hr>
+</div>
+{% endif %}
