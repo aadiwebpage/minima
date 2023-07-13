@@ -23,6 +23,9 @@ header_pages:
   - team.md
   - publications.md
 
+collections:
+  team:
+
 # Theme-specific settings
 
 minima:

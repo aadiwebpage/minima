@@ -7,12 +7,12 @@
 -->
 
 
-{% if include.id %}
+{% if member.name == "Kagan Tumer" %}
 
-<div class="card" style="background-color: azure;">
-    <div class="portada" style="background-color: rebeccapurple;">
+<div class="card" style="/*background-color: azure;*/">
+    <div class="portada" style="/*background-color: rebeccapurple;*/">
         <a href="">
-            <img src="/assets/images/profile_transparent.png" alt="{{ author.name }}" itemprop="image"
+            <img src="/assets/images/team/kagan.png" alt="{{ author.name }}" itemprop="image"
                 class="img-portada">
         </a>
         <h4 style="padding-top: 10px; text-align: center;">
@@ -38,7 +38,7 @@
             </ul>
 
         </div>
-        <div class="actions" style="background-color: yellowgreen;">
+        <div class="actions" style="/*background-color: yellowgreen;*/">
             <a class="link" href="mailto:kagan.tumer@oregonstate.edu">kagan.tumer@oregonstate.edu</a>
             <a class="link">(541) 737-9899</a>
             <a class="link">314 Graf Hall, Corvallis, OR</a>
@@ -49,23 +49,24 @@
 {% else %}
 <div class="card-container">
     <!--<span class="pro">PRO</span>-->
-    <div style="background-color: bisque; margin: 0px; padding: 0%;">
-        <a href="">
-            <img src="/assets/images/profile_transparent.png" alt="{{ author.name }}" itemprop="image" class="">
+    <div style="/*background-color: bisque;*/ margin: 0px; padding: 0%;">
+        <a href="{{member.webpage}}">
+            <img src="{{member.picture}}" alt="{{ author.name }}" itemprop="image" class="">
         </a>
     </div>
 
-    <h3>Ricky Park</h3>
-    <h4>PhD candidate</h4>
+    <h3>{{member.name}}</h3>
+    <h4>{{member.title}}</h4>
     <br />
-    <p>Coordination strategies in asymmetric multiagent systems with multiple objectives. Coordination strategies in
-        asymmetric multiagent systems with multiple objectives</p>
+    <p>
+        {{member.excerpt}}
+    </p>
     <br />
     <div>
-        <a class="link" href="mailto:dixitg@oregonstate.edu">
+        <a class="link" href="mailto:{{member.email}}">
             Email
         </a>
-        <a class="link" href="https://gdixit.com/">
+        <a class="link" href="{{member.webpage}}">
             Webpage
         </a>
     </div>

@@ -2,15 +2,11 @@
 layout: base
 ---
 
-{% include widgets/profile.html id=0 %}
-{% include widgets/divider.html %}
-
 <div style="display: flex; flex-flow: row wrap; /*justify-content: space-between;*/ align-items: center; align-content: space-around; row-gap: 10px;">
-{% include widgets/profile.html %}
-{% include widgets/profile.html %}
-{% include widgets/profile.html %}
-{% include widgets/profile.html %}
-{% include widgets/profile.html %}
-</div>
-{% include widgets/divider.html %}
+
+{% assign members = site.team | sort: "start_date" %}
+{% for member in members %}
+{% include widgets/profile.html member=member %}
+{% endfor %}
+
 
