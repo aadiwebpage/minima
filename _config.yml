@@ -28,6 +28,8 @@ collections:
 
 scholar:
   bibliography_template: bib
+  sort_by: year
+  order: descending
 
 # Theme-specific settings
 

@@ -379,6 +379,7 @@
     // line-height: 1;
     font-weight: 450;
     color: $charcoal-color;
+    text-transform: capitalize;
     @include media-query($on-laptop) {
       @include relative-font-size(1.25);
     }

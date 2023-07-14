@@ -3,10 +3,33 @@
 <!--{{ reference }}-->
 
 
+<!--
 <p>{{ entry.type }}</p>
 <p>{{ entry.booktitle }}</p>
 <p>{{ entry.author }}</p>
 <p>{{ entry.title }}</p>
 <p>{{ entry.url }}</p>
+-->
 
+<!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
+<span class="paper-title">{{ entry.title | escape }}</span>
+<br />
+{% if entry.author %}
+<span class="paper-authors">{{ entry.author | escape }}</span>
+{% elsif entry.editor %}
+<span class="paper-authors">{{ entry.editor | escape }}</span>
+{% endif %}
+<br />
+
+{% if entry.type contains "inproceedings" or  entry.type contains "incollection" %}
+<span class="paper-venue">{{ entry.booktitle | escape }}</span>
+{% elsif entry.type contains "proceedings"  %}
+<span class="paper-venue">{{ entry.title | escape }}</span>
+{% elsif entry.type contains "article"  %}
+<span class="paper-venue">Journal: {{ entry.journal | escape }}</span>
+{% endif %}
+<a class="paper-pdf-url" download href="{{ entry.biburl }}">[ bibtex ]</a>
+<a class="paper-pdf-url" href="{{ entry.url }}">[ pdf ]</a>
+
+<br /><br />
 <!--<pre>{{ entry.bibtex }}</pre>-->
