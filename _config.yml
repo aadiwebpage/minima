@@ -17,7 +17,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
+  - jekyll-scholar
 
 header_pages:
   - team.md
@@ -25,6 +25,9 @@ header_pages:
 
 collections:
   team:
+
+scholar:
+  bibliography_template: bib
 
 # Theme-specific settings
 
