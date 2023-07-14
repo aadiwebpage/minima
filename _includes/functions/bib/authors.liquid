@@ -1,0 +1,15 @@
+{% assign authors = include.authors %}
+{% for author in authors %}
+  {% if forloop.last %}
+    {% unless forloop.length == 1 %}
+      and
+    {% endunless %}
+    {% include /functions/bib/format_author.liquid author=author delim = "" -%}
+  {% else %}
+    {% if forloop.length == 2 %}
+      {% include /functions/bib/format_author.liquid author=author delim = "" -%}
+    {% else %}
+      {% include /functions/bib/format_author.liquid author=author delim = "," -%}
+    {% endif %}
+  {% endif %}
+{% endfor %}
