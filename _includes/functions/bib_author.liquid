@@ -1,0 +1,10 @@
+<!-- check  -->
+{%- assign author = include.author -%}
+{%- assign delim = include.delim -%}
+{%- if site.data.coauthors[author.last] -%}
+    <a href="{{site.data.coauthors[author.last].url}}" target="_blank">
+        {{- author.first | truncate: 2, "."}} {{ author.last -}}
+    </a>{{ delim }}
+{% else %}
+        {{- author.first | truncate: 2, "."}} {{ author.last -}} {{ delim }}
+{% endif %}

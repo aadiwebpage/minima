@@ -14,12 +14,44 @@
 <!--<a class="paper-link" href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a>-->
 <span class="paper-title">{{ entry.title | escape }}</span>
 <br />
+
+<span class="paper-authors">
 {% if entry.author %}
-<span class="paper-authors">{{ entry.author | escape }}</span>
+
+    {{entry.author_array.size}}
+
+    {% assign authors = entry.author_array %}
+    {% assign author_count = authors.size %}
+
+    {% case author_count %}
+        {% when 1 %}
+            {% assign author = authors[0] %}
+            {% include /functions/bib_author.liquid author=author delim='' %}
+        {% when 2 %}
+            {% assign author0 = authors[0] %}
+            {% assign author1 = authors[1] %}
+            {% include /functions/bib_author.liquid author=author0 delim=' and ' %}
+            {% include /functions/bib_author.liquid author=author1 delim='' %}
+
+        {% else %}
+
+            {% for author in authors %}
+                {% if forloop.last %}
+                    and {% include /functions/bib_author.liquid author=author delim='' -%}
+                {% else %}
+                    {% include /functions/bib_author.liquid author=author delim=',' -%}
+                {% endif %}
+
+            {% endfor %}
+
+    {% endcase %}
+</span>
 {% elsif entry.editor %}
-<span class="paper-authors">{{ entry.editor | escape }}</span>
+    <span class="paper-authors">{{ entry.editor | escape }}</span>
 {% endif %}
+
 <br />
+
 
 {% if entry.type contains "inproceedings" or  entry.type contains "incollection" %}
 <span class="paper-venue">{{ entry.booktitle | escape }}</span>
