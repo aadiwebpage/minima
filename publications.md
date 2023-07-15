@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: publications
 title: Publications
 permalink: /publications/
 years: [
@@ -37,6 +37,6 @@ years: [
 ---
 
 {% for y in page.years %}
-  <h3 class="article-list__group-header">{{y}}</h3>
+  <h3 class="home-title">{{y}}</h3>
   {% bibliography -f tumer -q @*[year={{y}}]* --sort_by %}
 {% endfor %}

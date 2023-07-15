@@ -1,0 +1,87 @@
+---
+layout: base
+---
+
+<div class="in-parent align-center justify-center listen-section-header">
+    Motivation
+</div>
+<br /><br /><br />
+
+<div class="listen-desc">
+
+The number of large complex systems composed of many interacting subsystems has exploded over the last decade. Spurred
+by the ever increasing size, interconnectivity and complexity of systems on one hand and the miniaturization and
+affordability of computing power on the other, new paradigms to managing such systems are emerging. Coordinating
+thousands of subsystems in dynamic and stochastic environments, an idea that a mere decade ago would have been
+outlandish, is not only possible, but imperative today. Indeed, the technological bottlenecks today are due to the lack
+of mathematics and algorithms to manage and coordinate such systems rather than difficulties associated with building
+them.
+<br />
+<br />
+
+Our work in the Autonomous Agents and Distributed Intelligence Lab is aimed squarely at solving these issues.
+Specifically, we focus on autonomous agents that optimize a system level objective through pursuing their own local
+objectives. The critical challenge in such a system is in determining the proper local objectives that when pursued
+successfully by the agents, lead to good system level behavior.
+
+<br /> 
+<br />
+Applications of this work include:
+</div>
+
+<ul class="styleul">
+    <li>Coordinating multiple robots/Unmanned Aerial Vehicles (UAVs) </li>
+    <li>Alleviating congestion in traffic problems</li>
+    <li>Routing power/data over a network</li>
+    <li>Controlling constellations of satellites</li>
+    <li>Coordinating sensor networks</li>
+    <li>Controlling constellations of satellites</li>
+    <li>Coordinating thousands of nano or micro computing devices</li>
+</ul>
+
+
+{% include widgets/divider.html %}
+
+<div class="in-parent align-center justify-center listen-section-header">
+    Long Term Directions
+</div>
+<br /><br /><br />
+
+<div class="listen-desc">
+
+
+The long term goals of <a href="/">AADI</a> are to extend the scope of this work both in terms of the application domains and the underlying mathematical framework. 
+Three key application domains highlight the need and the promise of this research:
+
+<br />
+<br />
+
+<b>Multiple robot / UAV coordination</b>: This domain provides a large scale complex system control challenge in which multiple robots have to be controlled to achieve system-level goals {% cite DBLP:conf/gecco/AgoginoHT12a --file tumer.bib %}. The appeal of this domain from a collectives perspective is that in addition to coordination, this domain requires system level recovery from faults (malfunctioning robots), system reconfiguration (redistributing tasks to functional robots), and operation under communication restrictions (robots in and out of contact with each other, human operators).
+
+<br />
+<br />
+
+<b>Micro-nano control:</b> This domain presents the most severe scaling challenge as thousands to tens of thousands of
+unreliable components need to be coordinated. This is a particularly interesting domain since most of the more
+traditional learning and control methods are difficult to apply as many of the assumptions on component specification
+and performance do not apply {% cite DBLP:journals/tsmc/SalichonT12 --file tumer.bib -L figure -l 3 & 7 %}.
+
+<br />
+<br />
+
+<b>Air Traffic Management:</b> This domain combines parts of the previous two challenges resulting in a true cyber-physical system {% cite DBLP:journals/connection/YliniemiAT15 --file tumer.bib %}. While micro-nano device domain focuses on controlling many simple devices and the multiple autonomous vehicle
+domain focuses on controlling a smaller number of sophisticated devices, the airspace problem presents the challenge of controlling a large number sophisticated components.
+
+<br />
+<br />
+
+Pursuing all three domains is essential in ensuring that the principles of controlling large dynamical systems stays paramount in this work. A new citation {% cite DBLP:conf/atal/DixitT23 --file tumer.bib %}.
+
+<br />
+
+{% include widgets/divider.html %}
+
+
+{% bibliography -f tumer.bib --cited_in_order %}
+
+</div>

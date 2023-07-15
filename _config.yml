@@ -1,4 +1,4 @@
-title: Autonomous Agents and Distributed Intelligence Laboratory
+title: AADI - Autonomous Agents and Distributed Intelligence Laboratory
 author:
   name: AADI (Kagan Tumer)
   email: kagan.tumer@oregonstate.edu
@@ -6,9 +6,7 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  Write an awesome description for your new site here. You can edit this line
-  in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+  The Autonomous Agents and Distributed Intelligence (AADI) Lab, part of the Collaborative Robotics and Intelligent Systems (CoRIS) Institute at Oregon State University.
 
 # Build settings
 
@@ -21,6 +19,7 @@ plugins:
 
 header_pages:
   - team.md
+  - research.md
   - publications.md
 
 collections:
@@ -28,6 +27,7 @@ collections:
 
 scholar:
   bibliography_template: bib
+  style: current-opinion
   sort_by: year
   order: descending
 

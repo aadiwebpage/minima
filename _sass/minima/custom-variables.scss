@@ -8,6 +8,7 @@ $content-width: 70%;
 $base-font-family: "Roboto";
 $base-font-size:   15px !default;
 $base-font-weight: 400 !default;
+$medium-font-size:  $base-font-size * 0.9 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $small-med-font-size:  $base-font-size * 0.825 !default;
 $meta-font-size:  $base-font-size * 0.78 !default;
@@ -26,4 +27,5 @@ $charcoal-color: rgb(124, 123, 123);
 
 
 $on-laptop-wide:        1000px !default;
+$on-laptop-wide-wide:   1500px !default;
 
